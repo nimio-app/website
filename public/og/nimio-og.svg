@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1b2a" />
+      <stop offset="1" stop-color="#1b4965" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1040" cy="96" r="210" fill="#1fbf9f" fill-opacity="0.18" />
+  <circle cx="140" cy="580" r="230" fill="#ff6b57" fill-opacity="0.16" />
+
+  <text x="96" y="220" fill="#d8fff6" font-size="32" font-family="Sora, Arial, sans-serif" letter-spacing="2">NIMIO</text>
+  <text x="96" y="320" fill="#ffffff" font-size="72" font-weight="700" font-family="Sora, Arial, sans-serif">
+    Respect starts before
+  </text>
+  <text x="96" y="398" fill="#ffffff" font-size="72" font-weight="700" font-family="Sora, Arial, sans-serif">
+    the first message.
+  </text>
+  <text x="96" y="468" fill="#cce7ff" font-size="34" font-family="Manrope, Arial, sans-serif">
+    Intentional availability without surveillance.
+  </text>
+
+  <rect x="790" y="196" width="320" height="236" rx="24" fill="#ffffff" fill-opacity="0.1" stroke="#91f0dc" stroke-opacity="0.5" />
+  <text x="830" y="255" fill="#c6f8ed" font-size="30" font-family="Manrope, Arial, sans-serif">🟢 Free</text>
+  <text x="830" y="310" fill="#ffd2cc" font-size="30" font-family="Manrope, Arial, sans-serif">🔴 Deep Work</text>
+  <text x="830" y="365" fill="#ffd2e8" font-size="30" font-family="Manrope, Arial, sans-serif">❤️ Want to talk</text>
+</svg>

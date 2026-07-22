@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import SeoHead from "../components/SeoHead.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title = "Nimio | Respect starts before the first message.",
+  description = "Nimio is an open-source, privacy-first platform for intentional availability. Know when to connect without pressure, tracking, or guesswork.",
+  ogImage = "/og/nimio-og.svg"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SeoHead title={title} description={description} ogImage={ogImage} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
