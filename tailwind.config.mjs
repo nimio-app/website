@@ -5,19 +5,19 @@ export default {
     extend: {
       colors: {
         nimio: {
-          ink: "#0d1b2a",
-          ocean: "#1b4965",
-          mint: "#1fbf9f",
-          sand: "#f2efe6",
-          coral: "#ff6b57"
+          ink: "#3a1f27",
+          ocean: "#ff2768",
+          mint: "#ff94b3",
+          sand: "#fff6f1",
+          coral: "#ff9b73"
         }
       },
       fontFamily: {
-        display: ["Sora", "ui-sans-serif", "system-ui", "sans-serif"],
-        body: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"]
+        display: ["Fraunces", "ui-serif", "Georgia", "serif"],
+        body: ["Nunito Sans", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(31, 191, 159, 0.2), 0 10px 35px rgba(13, 27, 42, 0.12)"
+        glow: "0 0 0 1px rgba(255, 39, 104, 0.24), 0 14px 40px rgba(58, 31, 39, 0.14)"
       },
       keyframes: {
         float: {

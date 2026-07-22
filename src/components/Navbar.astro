@@ -7,10 +7,10 @@ const links = [
 ];
 ---
 
-<header class="sticky top-0 z-30 border-b border-black/5 bg-white/70 backdrop-blur-xl dark:border-white/10 dark:bg-[#0b1522]/70">
+<header class="sticky top-0 z-30 border-b border-[#5a2e3a]/10 bg-[#fff8f4]/80 backdrop-blur-xl">
   <nav class="container-shell flex items-center justify-between py-4" aria-label="Main navigation">
     <a href="#top" class="focus-ring inline-flex items-center gap-3 rounded-full px-2 py-1">
-      <span class="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-nimio-ocean text-sm font-bold text-white shadow-glow">
+      <span class="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-nimio-coral text-sm font-bold text-white shadow-glow">
         <span class="absolute inset-0 bg-center bg-cover bg-no-repeat" style={`background-image: url('/nimio_logo.png');`} aria-hidden="true"></span>
         <span class="relative" aria-hidden="true">N</span>
       </span>
@@ -24,7 +24,7 @@ const links = [
             href={link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noreferrer" : undefined}
-            class="focus-ring rounded-md text-sm font-medium text-nimio-ink/85 transition hover:text-nimio-ocean dark:text-white/85 dark:hover:text-nimio-mint"
+            class="focus-ring rounded-md text-sm font-medium text-nimio-ink/85 transition hover:text-nimio-ocean"
           >
             {link.label}
           </a>
@@ -36,7 +36,7 @@ const links = [
       href="https://github.com/nimio-app/android"
       target="_blank"
       rel="noreferrer"
-      class="focus-ring rounded-full bg-nimio-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-nimio-ocean dark:bg-nimio-mint dark:text-[#05201b]"
+      class="focus-ring rounded-full bg-nimio-ocean px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#e51d5c]"
     >
       Get the App
     </a>
