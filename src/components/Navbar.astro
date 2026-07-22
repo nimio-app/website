@@ -10,7 +10,10 @@ const links = [
 <header class="sticky top-0 z-30 border-b border-black/5 bg-white/70 backdrop-blur-xl dark:border-white/10 dark:bg-[#0b1522]/70">
   <nav class="container-shell flex items-center justify-between py-4" aria-label="Main navigation">
     <a href="#top" class="focus-ring inline-flex items-center gap-3 rounded-full px-2 py-1">
-      <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-nimio-ocean text-sm font-bold text-white shadow-glow">N</span>
+      <span class="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-nimio-ocean text-sm font-bold text-white shadow-glow">
+        <span class="absolute inset-0 bg-center bg-cover bg-no-repeat" style={`background-image: url('/nimio_logo.png');`} aria-hidden="true"></span>
+        <span class="relative" aria-hidden="true">N</span>
+      </span>
       <span class="font-display text-lg font-semibold tracking-tight">Nimio</span>
     </a>
 

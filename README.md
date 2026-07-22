@@ -16,6 +16,8 @@ We believe:
 
 ## Development
 
+Place your brand logo at `public/nimio_logo.png` so Astro can serve it at `/nimio_logo.png`.
+
 ```bash
 # Install dependencies
 npm install
