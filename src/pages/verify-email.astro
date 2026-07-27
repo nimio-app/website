@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageDescription =
+  "Verify your Nimio email address and continue into the Android app.";
+---
+
+<BaseLayout title="Verify Email | Nimio" description={pageDescription} ogImage="/og/nimio-og.svg">
+  <main class="flex min-h-screen items-center justify-center px-6 py-16">
+    <section class="w-full max-w-2xl rounded-3xl border border-[#5a2e3a]/10 bg-white/85 p-8 shadow-sm backdrop-blur sm:p-10">
+      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-nimio-coral">Verify Email</p>
+      <h1 class="mt-4 font-display text-4xl font-bold tracking-tight text-nimio-ink sm:text-5xl">
+        You're all set.
+      </h1>
+
+      <div class="mt-8 rounded-2xl border border-nimio-ocean/15 bg-nimio-sand/50 p-6">
+        <p id="status" class="text-lg font-semibold text-nimio-ink">Checking your link...</p>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="https://nimio.org"
+          class="focus-ring rounded-full bg-nimio-ocean px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#e51d5c]"
+        >
+          Back to Nimio
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const statusElement = document.getElementById('status');
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token');
+
+    if (!token) {
+      statusElement.textContent = 'This link is missing a token.';
+    } else {
+      const verifyUrl = 'https://api.nimio.org/v1/auth/verify-email?token=' + encodeURIComponent(token);
+
+      fetch(verifyUrl, { method: 'GET' })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Verification request failed');
+          }
+
+          return response.json();
+        })
+        .then(() => {
+          statusElement.textContent = 'Your email is verified. You can close this page.';
+        })
+        .catch(() => {
+          statusElement.textContent = 'That link did not work. Try the latest email you received.';
+        });
+    }
+  </script>
+</BaseLayout>

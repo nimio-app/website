@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "org.nimio.app",
+      "sha256_cert_fingerprints": [
+        "62:72:A9:C7:12:6F:FE:F4:5D:82:0D:BB:79:1A:3A:11:EC:3D:99:02:EC:FA:28:76:56:55:8C:22:A7:BE:46:F0"
+      ]
+    }
+  }
+]
