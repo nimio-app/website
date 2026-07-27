@@ -36,9 +36,15 @@ const pageDescription =
     if (!token) {
       statusElement.textContent = 'This link is missing a token.';
     } else {
-      const verifyUrl = 'https://api.nimio.org/v1/auth/verify-email?token=' + encodeURIComponent(token);
+      const verifyUrl = 'https://api.nimio.org/v1/auth/verify-email';
 
-      fetch(verifyUrl, { method: 'GET' })
+      fetch(verifyUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ token })
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error('Verification request failed');
