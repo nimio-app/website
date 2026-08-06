@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const lastUpdated = "August 7, 2026";
+---
+
+<BaseLayout
+  title="Delete Your Nimio Account | Nimio"
+  description="How to request deletion of your Nimio account and associated data, including what is deleted, what may be retained, and retention timelines."
+  ogImage="/og/nimio-og.svg"
+>
+  <main class="px-6 py-16">
+    <article class="mx-auto w-full max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-nimio-coral">Nimio Account Deletion</p>
+      <h1 class="mt-4 font-display text-4xl font-bold tracking-tight text-nimio-ink sm:text-5xl">
+        Request deletion of your Nimio account
+      </h1>
+      <p class="mt-3 text-sm text-nimio-ink/60">Last updated: {lastUpdated}</p>
+
+      <section class="mt-10 rounded-3xl border border-nimio-ocean/25 bg-white/80 p-7 shadow-sm">
+        <h2 class="font-display text-2xl font-semibold text-nimio-ink">How to request deletion</h2>
+        <ol class="mt-4 list-decimal space-y-3 pl-5 text-nimio-ink/85">
+          <li>
+            Email
+            <a href="mailto:privacy@nimio.org" class="font-semibold text-nimio-ocean underline decoration-nimio-coral/50 hover:text-nimio-coral">
+              privacy@nimio.org
+            </a>
+            from the email address linked to your Nimio account.
+          </li>
+          <li>Use the subject line: <strong>Delete my Nimio account</strong>.</li>
+          <li>Include your Nimio username (if known) so we can locate the correct account faster.</li>
+          <li>We will confirm your request and process deletion after verifying account ownership.</li>
+        </ol>
+        <p class="mt-5 rounded-2xl bg-[#fff2ec] px-4 py-3 text-sm text-nimio-ink/80">
+          This page applies to the Nimio Android app and Nimio services operated by the Nimio team (nimio-app).
+        </p>
+      </section>
+
+      <section class="mt-8 rounded-3xl border border-[#5a2e3a]/10 bg-white/80 p-7 shadow-sm">
+        <h2 class="font-display text-2xl font-semibold text-nimio-ink">What data is deleted</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-nimio-ink/85">
+          <li>Account profile data (email, username, display name, bio).</li>
+          <li>Authentication data stored for your account (password hash and refresh-token records).</li>
+          <li>Connection graph and relationship-tier records associated with your account.</li>
+          <li>Availability/status history associated with your account.</li>
+          <li>Avatar files uploaded for your account.</li>
+        </ul>
+      </section>
+
+      <section class="mt-8 rounded-3xl border border-[#5a2e3a]/10 bg-white/80 p-7 shadow-sm">
+        <h2 class="font-display text-2xl font-semibold text-nimio-ink">What may be retained</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-nimio-ink/85">
+          <li>Limited security and operational logs for abuse prevention, fraud detection, and incident investigation.</li>
+          <li>Encrypted backup snapshots that may contain account data until backup rotation completes.</li>
+        </ul>
+        <p class="mt-4 text-nimio-ink/85">
+          Retention period for these items is up to <strong>30 days</strong> from deletion request completion. Purge timing depends on operational and backup-rotation schedules.
+        </p>
+      </section>
+
+      <section class="mt-8 rounded-3xl border border-[#5a2e3a]/10 bg-white/80 p-7 shadow-sm">
+        <h2 class="font-display text-2xl font-semibold text-nimio-ink">Timing</h2>
+        <p class="mt-4 text-nimio-ink/85">
+          We aim to complete account deletion requests within <strong>7 days</strong> of successful ownership verification.
+        </p>
+      </section>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a
+          href="mailto:privacy@nimio.org?subject=Delete%20my%20Nimio%20account"
+          class="focus-ring rounded-full bg-nimio-ocean px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#e51d5c]"
+        >
+          Email deletion request
+        </a>
+        <a
+          href="/privacy"
+          class="focus-ring rounded-full border border-nimio-ocean/25 bg-white/80 px-5 py-2.5 text-sm font-semibold text-nimio-ink transition hover:bg-white"
+        >
+          View privacy policy
+        </a>
+      </div>
+    </article>
+  </main>
+</BaseLayout>
